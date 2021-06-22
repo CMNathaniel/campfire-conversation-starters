@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>campfire conversation starters</title>
+    <link rel="icon" href="images/campfire-logo.png" type="image/x-icon" />
     <meta name="description" content="Pick a conversation starter to use around a campfire">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,24 +14,22 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <!--I'm not sure if I need to keep the id of this div, maybe once I start adding javascript to it !-->
-    <div class="top-nav" id="myTopnav">
+    <nav class="top-nav">
+        <img class="logo" src="images/campfire-logo.png" alt="campfire logo"/>  
         <a href="index.html" alt ="home tab" class="active">home</a>
         <a href="about.html" alt="about tab">about</a>
         <a href="contact.html" alt="contact tab">contact</a>
-        <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>!-->
-    </div>
+    </nav>
     <div class="main-app">
         <header>
             <h1>campfire conversation starters</h1>
-            <img class="logo" src="images/logo.jpeg" alt="friends sitting around a campfire"/>
+            <img class="header-image" src="images/friends-around-campfire.jpeg" alt="friends sitting around a campfire"/>            
             <p>The purpose of this app is to give you fun conversation starters, such as ones while sitting around a campfire with friends and family.</p>
         </header> 
         <main>
             <section class="category-list">
             <hr>
+            <br>
             <p>Select from one of the categories listed below to see questions<p>
             <ul>
                 <!-- not sure if the below syntax is correct. also might want classes for these buttons at some point-->
@@ -42,14 +41,14 @@
                 <li><button>hobbies</button></li>
                 <li><button>philosophy</button></li>
             </ul>
-            </section>
+        </section>
         </main>
     </div>
     <footer>
         <div class="social-share-bar social">
         <ul class="">
             <li>
-            <a class="facebook" src= href="http://facebook.com" alt="facebook">
+            <a class="facebook" href="http://facebook.com" alt="facebook">
                 <i class="fa fa-facebook"></i>
                     <span>Facebook</span>
                 </a>
@@ -68,6 +67,6 @@
             </li>         
         </ul>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
