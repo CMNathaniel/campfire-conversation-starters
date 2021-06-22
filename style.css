@@ -26,18 +26,21 @@ header {
 }
 
 .main-app {
-    padding: 0% 10% 5% 10%;
+    padding: 0 40px;
 }
 
 .main-app::after {
     content: "";
-    background-image: url("images/wood-grain.jpeg");
-    /*background-repeat: repeat-y; */
+    background: url("images/wood-grain.jpeg") repeat-y center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: #F9F7CA;
-    opacity: 0.4;
+    opacity: 0.20;
+    height: 1650px; 
     top: 0;
     left: 0;
-    height: 1550px;
     bottom: 0;
     right: 0;
     position: absolute; 
@@ -69,10 +72,10 @@ button {
 .logo {
     display: inline-block;
     vertical-align: top;
-    height: 40px;
+    height: 48px;
     float: right;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 
 /* Style the links inside the navigation bar */
@@ -110,6 +113,7 @@ ul {
 .category-list {
     align-items: center;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .header-image {
@@ -146,6 +150,7 @@ textarea {
 
 .rounded-social-buttons {
   text-align: center;
+  padding-top: 15px;
 }
 
 .rounded-social-buttons .social-button {
@@ -155,7 +160,6 @@ textarea {
   width: 3.125rem;
   height: 3.125rem;
   border: 0.125rem solid transparent;
-  padding: 0;
   text-decoration: none;
   text-align: center;
   color: #fefefe;
