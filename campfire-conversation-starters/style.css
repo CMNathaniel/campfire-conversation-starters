@@ -4,55 +4,72 @@
     box-sizing: border-box;
   }
   
-   /*html {
+   /* html {
     background: radial-gradient(ellipse at bottom,#1a0900 0%,  black 100%);
     background-size: cover;
     background-repeat:no-repeat;   
     min-height: 100% 
-  } */
+  }  */
   
   /*outer div, this is our container essentially */
   .main-app {
     width: 100%;
-    height: 100%;
+    height: 750px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     border-style: solid;
-    border-color:purple;
+    /* border-color:purple; */
     flex-basis: auto;
     align-content: stretch;
   }
-  
-  .intro {
-    border-style: solid;
-    border-color: pink;
-    margin: 1%; 
-  }
-  .main-app h1 {
-    width: 100%;
-    border-style: solid;
-    border-color: #ff6831;
+
+  .heading h1 {
+    width: 100%; 
+    height: 20%;
+    /* border-style: solid; */
+    /* border-color: #ff6831; */
     font-family: 'Gloria Hallelujah', cursive;
     color: #ff6831;
     font-size: 60px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
     flex-grow: 1;
+    flex-shrink: 1;
     flex-basis: auto;
-    margin: 1%;  
+    margin: 1%; 
   }
   
+  .testing {
+    border-style: solid;
+    /* border-color: blue; */
+    margin: 1%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 350px;
+  }
+  
+  .intro {
+    border-style: solid;
+    /* border-color: pink; */
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    max-width: 60%;
+  }
+
   /*app intro paragraph*/
   .main-app p {
     font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
     z-index: -1;
-    border-color: #ffb635;
+    /* border-color: #ffb635; */
     color: #ffb635;  
-    border-style: solid;
+    /* border-style: solid; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -63,7 +80,7 @@
   
   .main-app button {
     border-style: solid;
-    border-color: green;
+    /* border-color: green; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -73,20 +90,21 @@
   }
   
   .animation-player {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    max-width: 40%;
+    /* margin: 0 auto; */
     border-style: solid;
-    border-color: black;
+    /* border-color: black; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex-grow: 1;
-    flex-basis: auto;
+    /* flex-basis: auto; */
     margin: 1%; 
   }
   
-  .category-list {
+  /* .category-list {
     align-items: center;
     text-align: center;
     padding-bottom: 30px;
@@ -95,10 +113,10 @@
   .category-image {
     height: 200px;
     width: 120px;
-  }
+  } */
   
   /*all of the following is css for the button to make a flame image on hover */
-  #flaming-button {
+  button {
     padding: 20px;
     border: none;
     /*background: url('/images/log-illustration.jpeg') no-repeat scroll 0 0 transparent;*/
@@ -189,30 +207,55 @@
   
   /* MEDIA QUERIES FOR RESPONSIVE DESIGN */
   
-  @media (min-width: 400px) {
-    header > h1 {
-      font-size: 28px;
+  @media screen (min-width: 300px) {
+    .main-app {
+      height: 700px;
+    }
+    .heading h1 {
+      font-size: 26px;
+    }
+    .testing {
+      width: 300px;
+      height: 500px;
+    }
+    .intro {
+      width: 300px;
+      height: 200px;
+    }
+    .animation-player {
+      width: 300px;
+      height: 200px;
     }
   }
+
+  @media screen (min-width: 400px) {
+    .heading h1 {
+      font-size: 28px;
+    }
+    .animation-player {
+        width: 400px;
+        height: 20%;
+    } 
+  }
   
-  @media (min-width: 600px) {
-    header > h1 {
+  @media screen (min-width: 600px) {
+    .heading h1 {
       font-size: 31px;
     }
   }
   
-  @media (min-width: 800px) {
-    header > h1 {
+  @media screen (min-width: 800px) {
+    .heading h1 {
       font-size: 35px;
     }
     .main-app::after {
       height: 100vh;
     }
-  }
+  } 
   
-  /* @media (min-width: 1000px) {
-    h1 {
-      font-size: 40px;
+  @media screen (min-width: 950px) {
+    .heading h1{
+      font-size: 50px;
     }
-  } */
+  } 
   
