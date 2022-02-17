@@ -12,16 +12,17 @@
   }  */
   
   /*outer div, this is our container essentially */
-  .main-app {
-    width: 100%;
+  .landing-page {
+    width: 90%;
     height: 750px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin: auto;   
+    /* display: flex; */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     border-style: solid;
     /* border-color:purple; */
-    flex-basis: auto;
-    align-content: stretch;
+    /* flex-basis: auto;
+    align-content: stretch; */
   }
 
   .heading h1 {
@@ -32,37 +33,38 @@
     font-family: 'Gloria Hallelujah', cursive;
     color: #ff6831;
     font-size: 60px;
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
-    flex-grow: 1;
+    /* flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
-    margin: 1%; 
+    flex-basis: auto; */
+    /* margin: 1%;  */
+    margin-right: 50px;
   }
   
-  .testing {
-    border-style: solid;
+  .main {
+    /* border-style: solid; */
     /* border-color: blue; */
     margin: 1%; 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
     height: 350px;
   }
   
   .intro {
-    border-style: solid;
+    /* border-style: solid; */
     /* border-color: pink; */
     margin: 1%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
+    /* flex-direction: row;
+    flex-wrap: wrap;  */
     max-width: 60%;
   }
 
   /*app intro paragraph*/
-  .main-app p {
+  .landing-page p {
     font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
@@ -71,21 +73,21 @@
     color: #ffb635;  
     /* border-style: solid; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     flex-direction: row;
     flex-grow: 1;
-    flex-basis: auto;
+    flex-basis: auto; */
     margin: 1%; 
   }
   
-  .main-app button {
+  .landing-page button {
     border-style: solid;
     /* border-color: green; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     flex-direction: row;
     flex-grow: 1;
-    flex-basis: auto;
+    flex-basis: auto; */
     margin: 1%; 
   }
   
@@ -94,12 +96,11 @@
     width: 300px;
     max-width: 40%;
     /* margin: 0 auto; */
-    border-style: solid;
     /* border-color: black; */
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-grow: 1;
+    flex-grow: 1; */
     /* flex-basis: auto; */
     margin: 1%; 
   }
@@ -116,28 +117,33 @@
   } */
   
   /*all of the following is css for the button to make a flame image on hover */
-  button {
-    padding: 20px;
-    border: none;
+  .button {
     /*background: url('/images/log-illustration.jpeg') no-repeat scroll 0 0 transparent;*/
     /* color: black;
     font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 20px;
     border-radius: 999px;
     font-family: 'Gloria Hallelujah', cursive; */ 
     /*this was the impt stuff from codepen*/
-    position: relative;
+    /* position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    align-items: center; */
+    padding: 15px 20px;
+    border: none;
+    width: 500px;
+    height: 75px;
     object-fit : contain;
+    cursor: pointer;
+    text-align: center;
+    margin: 4px 2px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color:
   }
   
-    &:hover {
+    /* &:hover {
       animation: burn 1000ms ease-out forwards;
       
       &::before {
@@ -191,7 +197,7 @@
         0 -20px 10px 0 rgba(255, 255, 10, 0);
     }
   }
-  
+   */
   /*button {
     padding: 20px;
     border: none;
@@ -207,14 +213,14 @@
   
   /* MEDIA QUERIES FOR RESPONSIVE DESIGN */
   
-  @media screen (min-width: 300px) {
-    .main-app {
+  /* @media screen (min-width: 300px) {
+    .landing-page {
       height: 700px;
     }
     .heading h1 {
       font-size: 26px;
     }
-    .testing {
+    .main {
       width: 300px;
       height: 500px;
     }
@@ -248,7 +254,7 @@
     .heading h1 {
       font-size: 35px;
     }
-    .main-app::after {
+    .landing-page::after {
       height: 100vh;
     }
   } 
@@ -258,4 +264,4 @@
       font-size: 50px;
     }
   } 
-  
+   */
