@@ -57,7 +57,7 @@ body {
   font-size: 22px;
   justify-content: center;
   align-items: center;
-  z-index: -1;
+ 
   /* display: flex;  */
   /* flex-direction: row;
   flex-wrap: wrap;  */
@@ -75,7 +75,7 @@ body {
   text-align: center;
 }
   
-#button {
+button {
   border-style: solid;
   border-color: green; 
   color: white;
@@ -83,6 +83,7 @@ body {
   padding: 12px 0 12px;
   width: 280px;
   height: 70px;
+  font-size: 22px;
   text-align: center;
   vertical-align: middle;
   margin:  auto auto;
@@ -90,6 +91,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
+  cursor: pointer;
+  
+
     /* flex-wrap: wrap;
   flex-direction: row;
   flex-grow: 1;
@@ -98,11 +102,10 @@ body {
   /* transition: all 0.3s ease; */
 }
 
-/* #button:hover {
+/* button:hover {
   background-color: #ff6831;
-  cursor: pointer;
   text-decoration: none;
-} */
+}  */
   
 .animation-player {
   height: 500px;
