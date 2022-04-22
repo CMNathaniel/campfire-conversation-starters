@@ -53,8 +53,7 @@ body {
   border-color: ffb635; 
   margin: 1%;
   max-width: 60%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
+
   justify-content: center;
   align-items: center;
  
@@ -73,6 +72,8 @@ body {
   padding-bottom: 50px;
   color: #ffb635; 
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
 }
   
 button {
@@ -124,3 +125,61 @@ button {
   flex-grow: 1; */
   /* flex-basis: auto; */
 }
+
+@media only screen and (max-width: 480px) {
+  /* we need this to take the full width of the main div */
+  .intro p, button {
+    font-size: 16px;
+  }
+  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
+  /* I'm trying to decrease space between the h1 words at this max-width size */
+  .heading h1 {
+    font-size: 44px;
+    margin-top: 0;
+  }
+  /* we need the animation to go under the button now */
+
+  .animation-player {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro p, button {
+    font-size: 18px;
+  }
+  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
+  .heading h1 {
+    font-size: 46px;
+  }
+  .animation-player {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px & max-width: 1199px) {
+  .intro p, button {
+    font-size: 19px;
+  }
+  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
+  .heading h1 {
+    font-size: 48px;
+  }
+  .animation-player {
+    display: none;
+  }
+}
+
+/* Extra large devices like large laptops and desktops, 1200px and up */
+/* @media only screen and (min-width: 1280px) {
+  .intro p, button {
+    font-size: 20px;
+  }
+  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
+  /* .heading h1 {
+    font-size: 50px;
+  }
+  .animation-player {
+    display: none;
+  }
+}  */ */
