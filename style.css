@@ -31,12 +31,13 @@ body {
   width: 100%; 
   height: 80%;
   font-family: 'Gloria Hallelujah', cursive;
-  color: #ff6831;
+  color: #ED2938;
+  
   font-size: 60px;
   margin-top: 2%;  
   margin-right: 50px;
   /* border-style: solid;  */
-  border-color: #ff6831;
+  border-color: #ED2938;
   display: flex;
   justify-content: left;
   /* align-items: left; */
@@ -70,7 +71,7 @@ body {
 
 .intro p {
   padding-bottom: 50px;
-  color: #ffb635; 
+  color: #ffaa1c; 
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
@@ -78,9 +79,12 @@ body {
   
 button {
   border-style: solid;
-  border-color: green; 
-  color: white;
+  /* border-color: green; 
   background-color: green;
+  color: white; */
+  border-color: #006b3e; 
+  background-color: #006b3e;
+  color: white;
   padding: 12px 0 12px;
   width: 280px;
   height: 70px;
@@ -112,8 +116,8 @@ button {
   height: 500px;
   width: 500px;
   max-width: 40%;
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
   margin-top: -120px;
   /* margin-bottom: -100px; */
   margin-left: -50px;
@@ -139,9 +143,9 @@ button {
   }
   /* we need the animation to go under the button now */
 
-  .animation-player {
+  /* .animation-player {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -152,9 +156,9 @@ button {
   .heading h1 {
     font-size: 46px;
   }
-  .animation-player {
+  /* .animation-player {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px & max-width: 1199px) {
@@ -165,9 +169,9 @@ button {
   .heading h1 {
     font-size: 48px;
   }
-  .animation-player {
+  /* .animation-player {
     display: none;
-  }
+  } */
 }
 
 /* Extra large devices like large laptops and desktops, 1200px and up */
