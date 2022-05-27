@@ -6,19 +6,24 @@
 
 /* background has a black fallback colour otherwise subtle gradient emulating the glow of a fire in the night */
 html {
-  background: black radial-gradient(farthest-corner at top, black 60%, orange 90%);
-  /* z-index: -1; */
+  background: black;
+  z-index: -1;
+}
+
+body {
+  min-height: 100vh;
 }
 
 /* main, this is our container for the paragraph, button and animation */
 .main {
   display: flex;
+  flex-direction: row;
 }
   
 /*landing-page, this is our main container essentially */
 .landing-page {
   width: 90%;
-  height: 1750px;
+  /* height: auto; */
   margin: auto;  
   border-style: solid; 
   display: flex;
@@ -31,7 +36,7 @@ html {
 /* this is the heading of the page */
 #heading {
   width: 100%; 
-  height: 10px; 
+  /* height: 10px;  */
   margin-top: 2%;  
   margin-right: 50px;
   border-style: solid;  
@@ -58,6 +63,7 @@ html {
   border-style: solid; 
   border-color: ffb635; 
   margin: 1%;
+  margin-bottom: 5%;
   max-width: 60%;
 
   justify-content: center;
@@ -75,7 +81,6 @@ html {
 
 /* just the paragraph */
 .intro p {
-  padding-bottom: 50px;
   color: #ffaa1c; 
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -120,73 +125,85 @@ html {
   
 /* this is the animation */ 
 .animation-player {
-  height: 500px;
-  width: 500px;
-  max-width: 40%;
+  /* height: 500px;
+  width: 500px; */
+  /* max-width: 40%; */
   border-style: solid;
-  border-color: black;
-  margin-top: -120px;
-  /* margin-bottom: -100px; */
-  margin-left: -50px;
-  margin-right: -50px;
-  /* margin: 0 auto; */
+  border-color: white;
+  /* margin-top: -10%;
+  margin-bottom: -300%;
+  margin-left: -50%; 
+  margin-right: -10%;  */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   flex-grow: 1; 
+  flex-shrink: 5;
   flex-basis: auto; 
+  padding-top: -100%; 
 }
 
-/* @media only screen and (max-width: 480px) {
-  /* we need this to take the full width of the main div */
-  /* .intro p, button {
+@media only screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
+  .intro {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: stretch;   
+    width: 100%;
+  }
+  .intro p, button {
     font-size: 16px;
   }
-  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
-  /* I'm trying to decrease space between the h1 words at this max-width size */
-  /* .heading h1 {
+  .heading h1 {
     font-size: 44px;
+    line-height: 20px;
     margin-top: 0;
-  } */
-  /* we need the animation to go under the button now */
-
-  /* .animation-player {
-    display: none;
-  } */
-/*} */ 
+  } 
+  .animation-player {
+    flex-direction: column;
+    max-width: 100%; 
+  }
+} 
 
 @media only screen and (min-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .intro {
+    flex-direction: column;
+    align-items: center;
+     
+    width: 100%;
+  }
   .intro p, button {
     font-size: 18px;
   }
-  /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
-  /* .heading h1 {
+  .heading h1 {
     font-size: 46px;
-  } */
-
-  .intro {
-    flex-direction: column;
-  }
+    margin-top: 0;
+  } 
   .animation-player {
-    /* display: none; */
     flex-direction: column;
-    height: 100%;
+    max-width: 100%;
+    max-height: 10%;
   }
-
 }
+
 /* 
 @media only screen and (min-width: 1024px & max-width: 1199px) {
   .intro p, button {
     font-size: 19px;
   }
   /* this is using the exact ratio of font sizes at full size but I can always adjust as needed */
-  .heading h1 {
+  /* .heading h1 {
     font-size: 48px;
-  } */
+  } */ */
   /* .animation-player {
     display: none;
   } */
-}
+/* } */
 
 /* Extra large devices like large laptops and desktops, 1200px and up */
 /* @media only screen and (min-width: 1280px) {
@@ -200,4 +217,4 @@ html {
   .animation-player {
     display: none;
   }
-}  */ 
+}  */
